@@ -37,7 +37,7 @@ export default function TaglineSection() {
         const tl = gsap.timeline({
           scrollTrigger: {
             trigger: section,
-            start: "top 80%",
+            start: "top 70%",
             once: true,
           },
         });
@@ -78,25 +78,29 @@ export default function TaglineSection() {
       aria-label="Tagline"
       style={{
         position: "relative",
-        marginTop: "-35vh",
-        paddingTop: "8vh",
-        paddingBottom: "28vh",
-        paddingLeft: "clamp(2rem, 7vw, 9rem)",
-        background: "linear-gradient(to bottom, transparent 0%, rgba(8,10,12,0.5) 30%, rgba(8,10,12,0.88) 60%, #080A0C 100%)",
+        width: "100%",
+        minHeight: "100vh",
+        background: "#080A0C",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        paddingLeft: "clamp(2rem, 10vw, 12rem)",
+        paddingTop: "10vh",
+        paddingBottom: "10vh",
         zIndex: 10,
       }}
     >
-      <div style={{ overflow: "hidden", marginBottom: "1.8em" }}>
+      <div style={{ overflow: "hidden", marginBottom: "1.6em" }}>
         <div
           ref={line1Ref}
           style={{
-            transform: "translateY(60%)",
+            transform: "translateY(100%)",
             opacity: 0,
-            fontSize: "clamp(2rem, 4.5vw, 3.8rem)",
+            fontSize: "clamp(2.2rem, 5vw, 4.5rem)",
             fontFamily: "var(--font-sans)",
             fontWeight: 300,
             letterSpacing: "0.06em",
-            color: "rgba(240, 237, 232, 0.88)",
+            color: "rgba(240, 237, 232, 0.85)",
             lineHeight: 1.1,
           }}
         >
@@ -104,17 +108,17 @@ export default function TaglineSection() {
         </div>
       </div>
 
-      <div style={{ overflow: "hidden", marginBottom: "1.8em" }}>
+      <div style={{ overflow: "hidden", marginBottom: "1.6em" }}>
         <div
           ref={line2Ref}
           style={{
-            transform: "translateY(60%)",
+            transform: "translateY(100%)",
             opacity: 0,
-            fontSize: "clamp(2rem, 4.5vw, 3.8rem)",
+            fontSize: "clamp(2.2rem, 5vw, 4.5rem)",
             fontFamily: "var(--font-sans)",
             fontWeight: 300,
             letterSpacing: "0.06em",
-            color: "rgba(240, 237, 232, 0.88)",
+            color: "rgba(240, 237, 232, 0.85)",
             lineHeight: 1.1,
           }}
         >
@@ -126,13 +130,13 @@ export default function TaglineSection() {
         <div
           ref={line3Ref}
           style={{
-            transform: "translateY(60%)",
+            transform: "translateY(100%)",
             opacity: 0,
-            fontSize: "clamp(2rem, 4.5vw, 3.8rem)",
+            fontSize: "clamp(2.2rem, 5vw, 4.5rem)",
             fontFamily: "var(--font-sans)",
             fontWeight: 300,
             letterSpacing: "0.06em",
-            color: "rgba(240, 237, 232, 0.88)",
+            color: "rgba(240, 237, 232, 0.85)",
             lineHeight: 1.1,
           }}
         >
