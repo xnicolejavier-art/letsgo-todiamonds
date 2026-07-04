@@ -136,7 +136,7 @@ export default function HeroSection() {
       aria-label="Diamonds Gentlemen's Club exterior"
     >
       <h1 className="sr-only">
-        Diamonds Gentlemen's Club — Mississauga, Ontario
+        Diamonds Gentlemen&apos;s Club — Mississauga, Ontario
       </h1>
 
       <div
